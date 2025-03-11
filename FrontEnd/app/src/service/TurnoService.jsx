@@ -1,31 +1,19 @@
-import axios from "axios";
+import axios from 'axios';
 
-const API_URL = ""; // Link backend
+const TURNO_BASE_RES_API_URL = "http://localhost:8090/turnos"; 
 
 class TurnoService {
-  getAllTurnos() {
-    return axios.get(API_URL);
-  }
+    getAllTurnos() {
+        return axios.get(TURNO_BASE_RES_API_URL);
+    }
 
-  getTurnoById(id) {
-    return axios.get(`${API_URL}/${id}`);
-  }
-
-  createTurno(turno) {
-    return axios.post(API_URL, turno, {
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-
-  updateTurno(id, turno) {
-    return axios.put(`${API_URL}/${id}`, turno, {
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-
-  deleteTurno(id) {
-    return axios.delete(`${API_URL}/${id}`);
-  }
+    createTurno(turno) {
+        return axios.post(TURNO_BASE_RES_API_URL, turno, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+    }
 }
 
 export default new TurnoService();

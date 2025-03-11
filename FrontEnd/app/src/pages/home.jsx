@@ -5,9 +5,11 @@ const Home = () => {
     
     return (
         <>
+            <div className="app">
+                <Header/>
+                <ListTurnos/>
+            </div>
             
-            <Header/>
-            <ListTurnos/>
 
         </>
       
