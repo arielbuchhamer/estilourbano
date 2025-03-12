@@ -1,28 +1,26 @@
 import { Link } from "react-router-dom";
-import { FaCut } from "react-icons/fa";
 
 const Header = () => {
     return (
-        <header className="bg-gray-900 text-white py-4 shadow-lg">
-            <div className="container mx-auto flex justify-between items-center px-4">
-                <div className="flex items-center gap-2">
-                    <FaCut className="text-red-500 text-2xl" />
-                    <h1 className="text-2xl font-bold tracking-wide">EstiloUrbano</h1>
+        <header className="bg-[#1E1E1E] text-[#EAEAEA] py-4 shadow-md">
+            <div className="container mx-auto flex justify-between items-center px-6">
+                {/* Logo personalizado */}
+                <div className="flex items-center gap-3">
+                    <img 
+                        src="/assets/img/poste-de-barbero.png" 
+                        alt="Logo Estilo Urbano" 
+                        className="h-12 w-auto"
+                    />
+                    <h1 className="text-3xl font-[Rubik_Wet_Paint] tracking-wide text-[var(--color-accent)]">
+                        Estilo Urbano
+                    </h1>
+
                 </div>
 
-                <nav>
-                    <ul className="flex space-x-6 text-lg">
-                        <li>
-                            <Link to="/" className="hover:text-red-400 transition">
-                               
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-
+                {/* Botón Agendar Turno */}
                 <Link
                     to="/agregar-turno"
-                    className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg shadow-md transition"
+                    className="bg-[#155dfc] hover:bg-[#71829b] text-white px-5 py-2 rounded-lg shadow-lg transition duration-300"
                 >
                     Agendar Turno
                 </Link>

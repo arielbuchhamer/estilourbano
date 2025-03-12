@@ -5,7 +5,7 @@ const Home = () => {
     
     return (
         <>
-            <div className="app">
+            <div className="min-h-screen bg-[var(--color-bg)] text-white">
                 <Header/>
                 <ListTurnos/>
             </div>
