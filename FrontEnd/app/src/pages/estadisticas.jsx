@@ -1,8 +1,8 @@
 import Header from "../components/header";
-import ListTurnos from "../components/listTurnos";
 import React, { useState } from "react";
 
-const Home = () => {
+
+const Estadisticas = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
@@ -14,8 +14,8 @@ const Home = () => {
             <main 
                 className={`flex-1 p-6 transition-all duration-300 
                     ${menuOpen ? "blur-sm lg:blur-0" : ""} lg:ml-64`}
-            >   <div className="sm:mt-">
-                    <ListTurnos/>
+            >   <div className="text-center">
+                    <h1>proximamente</h1>
                 </div>
                 
             </main>
@@ -23,4 +23,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Estadisticas;
