@@ -3,24 +3,25 @@ package com.estilourbano.estilourbano.model;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
+@Document(collection = "turnos")
 public class Turno {
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private String id;
 	private String cliente;
 	private LocalDateTime fecha;
 	
 	public Turno() {
 	}
 
-	public Long getId() {
+	public String getId() {
 		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public String getCliente() {

@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Usuario\Documents\GitHub\estilourbano-workspaces\backendapi"/>
+			<item value="C:\Users\Usuario\Documents\GitHub\estilourbano-workspaces\backend"/>
+			<item value="C:\Users\Usuario\Documents\GitHub\estilourbano-workspaces\springboot-mongo-atlas"/>
 			<item value="C:\Users\Usuario\Documents\GitHub\estilourbano"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -12,5 +15,9 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>
